@@ -1,0 +1,14 @@
+.tool-btn {
+	border: 1px solid #1c45db;
+	color: #1c45db;
+	background-color: transparent;
+	font-family: 'freight-sans-pro', sans-serif;
+	font-size: 14px;
+	padding: 3px 8px;
+	margin: 0 5px;
+	border-radius: 1.5px;
+}
+
+.tool-btn:focus {
+	outline: none;
+}

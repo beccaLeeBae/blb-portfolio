@@ -1,0 +1,35 @@
+.single-proj-container {
+	min-height: calc(100vh - 200px);
+	padding: 60px;
+}
+
+.single-proj-container img {
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#proj-title {
+	color: #1c45db;
+	text-transform: uppercase;
+	font-family: "maple-web", sans-serif;
+	font-size: 35px;
+	margin: 0;
+}
+
+#proj-desc {
+	font-size: 18px;
+	margin: 100px;
+}
+
+#services {
+	text-transform: uppercase;
+	color: rgba(0,0,0,0.65);
+}
+
+.proj-tools {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
