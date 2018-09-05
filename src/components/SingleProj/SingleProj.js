@@ -7,6 +7,12 @@ class SingleProj extends Component {
 		return (
 			<div>
 			{p.title}
+			<br/>
+			{p.description}
+			<br/>
+			{p.tools}
+			<br/>
+			{p.services}
 			</div>
 		);
 	}
