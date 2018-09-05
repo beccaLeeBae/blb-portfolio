@@ -1,0 +1,15 @@
+.landing-container {
+	height: 100vh;
+	display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 40px;
+}
+
+#hl-name {
+	color: #1c45db;
+	text-transform: uppercase;
+	font-family: "maple-web", sans-serif;
+	font-size: 35px;
+}

@@ -1,0 +1,17 @@
+.work-container {
+	min-height: 100vh;
+}
+
+.work-container #header {
+	color: #1c45db;
+	text-transform: uppercase;
+	font-family: "maple-web", sans-serif;
+	font-size: 25px;
+}
+
+.work-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+}
