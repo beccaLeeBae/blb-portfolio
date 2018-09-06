@@ -1,5 +1,4 @@
 .single-proj-container {
-	/*min-height: calc(100vh - 200px);*/
 	padding: 60px;
 	display: flex;
 	flex-direction: column;
@@ -9,7 +8,6 @@
 
 .single-proj-container img {
 	width: calc(100vw - 240px);
-	/*height: auto;*/
 }
 
 #proj-title {
