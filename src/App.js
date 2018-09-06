@@ -91,8 +91,15 @@ class App extends Component {
         }
       ]
     };
+    this.scrollToContent = this.scrollToContent.bind(this);
     this.handleMouseEnter = this.handleMouseEnter.bind(this);
     this.handleMouseLeave = this.handleMouseLeave.bind(this);
+  }
+  scrollToContent() {
+    document.querySelector('.work-container').scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
   }
   handleMouseEnter(i) {
     let w = this.state.work;
@@ -116,6 +123,7 @@ class App extends Component {
             render={() => (
               <Home
                 work={this.state.work}
+                scrollToContent={this.scrollToContent}
                 handleMouseLeave={this.handleMouseLeave}
                 handleMouseEnter={this.handleMouseEnter}
               />

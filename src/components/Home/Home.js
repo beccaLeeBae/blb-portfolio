@@ -6,7 +6,7 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<Landing />
+				<Landing scrollToContent={this.props.scrollToContent}/>
 				<Work
 					work={this.props.work}
 					handleMouseEnter={this.props.handleMouseEnter}

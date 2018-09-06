@@ -13,6 +13,7 @@ class Landing extends Component {
 					passionate about designing and developing beautiful, intuitive
 					experiences.
 				</p>
+				<p id="scroll-down" onClick={this.props.scrollToContent}>&#42780;</p>
 			</div>
 		);
 	}

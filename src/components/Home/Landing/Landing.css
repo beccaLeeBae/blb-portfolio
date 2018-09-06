@@ -14,6 +14,17 @@
 	font-size: 35px;
 }
 
+#scroll-down {
+	font-size: 50px;
+	margin: 0;
+	transition: all 0.3s ease 0s;
+}
+
+#scroll-down:hover {
+	cursor: pointer;
+	transform: translateY(5px);
+}
+
 @media screen and (max-width: 582px) {
 	.landing-container {
 		font-size: 20px;
