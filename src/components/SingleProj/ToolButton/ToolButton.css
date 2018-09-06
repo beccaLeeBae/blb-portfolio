@@ -8,7 +8,3 @@
 	margin: 0 5px 10px 5px;
 	border-radius: 1.5px;
 }
-
-.tool-btn:focus {
-	outline: none;
-}

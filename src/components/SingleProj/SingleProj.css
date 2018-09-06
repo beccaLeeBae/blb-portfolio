@@ -38,6 +38,11 @@
 #back-btn {
 	color: black;
 }
+@media screen and (max-width: 836px) {
+	#proj-desc {
+		margin: 40px 0 40px 0;
+	}
+}
 
 @media screen and (max-width: 582px) {
 	.single-proj-container {
@@ -49,8 +54,5 @@
 	}
 	#proj-title {
 		font-size: 28px;
-	}
-	#proj-desc {
-		margin: 40px 0 40px 0;
 	}
 }
