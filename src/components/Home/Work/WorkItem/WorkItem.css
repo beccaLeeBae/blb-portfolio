@@ -1,6 +1,34 @@
-.w-item-container {
-	max-width: 450px;
-	width: 80vw;
-	min-height: 240px;
+.proj-tile {
+	max-width: 400px;
+	width: 100%;
+	margin: 1rem;
 	background-color: #1c45db;
+	position: relative;
+	text-align: center;
+}
+
+.tile-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.proj-tile a {
+	display: grid;
+	color: white;
+	font-size: 45px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.proj-tile img {
+	width: 100%;
+	transition: all 0.3s ease 0s;
+}
+
+.proj-tile img:hover {
+	opacity: 0.2;
+	filter: grayscale(70%);
+	transition: all 0.3s ease 0s;
 }

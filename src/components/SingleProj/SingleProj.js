@@ -14,9 +14,9 @@ class SingleProj extends Component {
 		return (
 			<div className="single-proj-container">
 				<p id="proj-title">{p.title}</p>
-				{p.services && <small id="services">{p.services.join(", ")}</small>}
+				<small id="services">{p.services.join(", ")}</small>
 				<p id="proj-desc">{p.description}</p>
-				<img src={`${p.imgLg}`} />
+				<img src={`${p.imgLg}`} alt={p.title}/>
 				<ProjTools p={p}/>
 				<br />
 				{p.link && <SiteButton link={p.link} />}

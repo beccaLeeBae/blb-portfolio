@@ -20,7 +20,7 @@
 }
 
 #proj-desc {
-	font-size: 20px;
+	font-size: 22px;
 	margin: 100px;
 }
 
@@ -43,6 +43,9 @@
 	.single-proj-container {
 		padding: 0;
 		margin: 40px 0 40px 0;
+	}
+	.single-proj-container img {
+		width: 100%;
 	}
 	#proj-title {
 		font-size: 28px;

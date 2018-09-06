@@ -4,4 +4,9 @@ body {
   font-family: 'freight-sans-pro', sans-serif;
   min-height: 100vh;
   padding: 0 60px;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+	text-decoration: none;
 }
