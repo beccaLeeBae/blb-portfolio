@@ -1,5 +1,6 @@
 .work-container {
 	min-height: 100vh;
+	padding-top: 30px;
 }
 
 .work-container #header {

@@ -25,7 +25,7 @@ class App extends Component {
           imgSm: "https://i.imgur.com/0vcp4s7.png",
           imgLg: "https://i.imgur.com/3vq16Up.png",
           description:
-            "As the sole front-end engineer of Hello Vera (a customer service AI startup), I was tasked with revamping their client-facing console. I designed and implemented a new layout, self-service onboarding, a multi-channel dashboard, report pages, and knowledge base import tools. Hello Vera was recently acquired in August.",
+            "As the sole front-end engineer of Hello Vera (a customer service AI startup), I was tasked with revamping their client-facing console. I designed and implemented a new layout, self-service onboarding, a multi-channel dashboard, report pages, and knowledge base import tools.",
           services: ["UX/UI Design", "Front-End Web Development"],
           tools: [
             "JavaScript/jQuery",
@@ -70,7 +70,7 @@ class App extends Component {
           title: "Windows 98: Becca Lee Bae",
           imgSm: "https://i.imgur.com/mOupaND.png",
           imgLg: "https://i.imgur.com/brxaLnf.png",
-          link: "http://98.beccalebae.com",
+          link: "http://windows.beccalebae.com",
           description:
             "As a curious and extremely bored 8-year-old, I learned how to code HTML and CSS to build a site on Yahoo GeoCities offering pre-made web layouts and GIFs. After months of trying to find the site in the Internet Archive, I decided to make my portfolio site an homage to my earliest coding memories.",
           services: ['Front-End Web Development'],

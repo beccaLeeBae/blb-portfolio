@@ -24,11 +24,11 @@
 
 .proj-tile img {
 	width: 100%;
-	transition: all 0.3s ease 0s;
+	transition: all 0.4s ease 0s;
 }
 
 .proj-tile img:hover {
-	opacity: 0.2;
+	opacity: 0.05;
 	filter: grayscale(70%);
 	transition: all 0.3s ease 0s;
 }
