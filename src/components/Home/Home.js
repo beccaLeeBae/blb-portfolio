@@ -3,6 +3,12 @@ import Landing from "./Landing/Landing";
 import Work from "./Work/Work";
 
 class Home extends Component {
+	componentDidMount(){
+		window.addEventListener('scroll', this.props.checkIfInView);
+	}
+	componentWillUnmount(){
+		window.removeEventListener('scroll', this.props.checkIfInView);
+	}
 	render() {
 		return (
 			<div>

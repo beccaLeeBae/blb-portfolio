@@ -7,7 +7,9 @@ class WorkItem extends Component {
 		let id = this.props.item.id;
 		return (
 			<div
-				className="proj-tile"
+				className={this.props.item.visible ? "proj-tile vis" : "proj-tile in-vis"}
+				style={{transitionDelay: `${0.36 * id}s`}}
+				id={`el-010${id}`}
 				onMouseEnter={() => this.props.handleMouseEnter(id)}
 				onMouseLeave={() => this.props.handleMouseLeave(id)}
 			>

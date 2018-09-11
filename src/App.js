@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Home from "./components/Home/Home";
 import SingleProj from "./components/SingleProj/SingleProj";
 import Footer from "./components/Footer/Footer";
+import EmailIcon from './assets/email.png';
+import LinkedInIcon from './assets/linkedin.png';
 import { Switch, Route } from "react-router-dom";
 
 class App extends Component {
@@ -11,10 +13,12 @@ class App extends Component {
       links: [
         {
           href: "mailto:beccaleebae@gmail.com",
+          icon: EmailIcon,
           title: "Email"
         },
         {
           href: "https://www.linkedin.com/in/rebekahbae/",
+          icon: LinkedInIcon,
           title: "LinkedIn"
         }
       ],
@@ -35,7 +39,8 @@ class App extends Component {
             "Bootstrap",
             "Sketch"
           ],
-          hovering: false
+          hovering: false,
+          visible: false
         },
         {
           id: 1,
@@ -51,7 +56,8 @@ class App extends Component {
             "Press Kit Design"
           ],
           tools: ["React", "CSS", "Bootstrap", "Sketch", "Photoshop"],
-          hovering: false
+          hovering: false,
+          visible: false
         },
         {
           id: 2,
@@ -63,19 +69,21 @@ class App extends Component {
             "After finding out that my best friend was getting married, a website seemed like the perfect wedding gift. Grace and Damon's wedding website features a custom designed front-end with functionality such as browsing the wedding party, accessing the registry, and getting important information about the wedding day. Additonally, I built a guest RSVP API that integrates with the front-end to provide a seamless experience for attendees as well as an admin portal to manage RSVPs.",
           services: ["UX/UI Design", "Web Development"],
           tools: ["React", "Ruby on Rails", "PostgreSQL", "CSS", "Bootstrap"],
-          hovering: false
+          hovering: false,
+          visible: false
         },
         {
           id: 3,
           title: "Windows 98: Becca Lee Bae",
           imgSm: "https://i.imgur.com/mOupaND.png",
           imgLg: "https://i.imgur.com/brxaLnf.png",
-          link: "http://windows.beccalebae.com",
+          link: "http://windows.beccaleebae.com",
           description:
-            "As a curious and extremely bored 8-year-old, I learned how to code HTML and CSS to build a site on Yahoo GeoCities offering pre-made web layouts and GIFs. After months of trying to find the site in the Internet Archive, I decided to make my portfolio site an homage to my earliest coding memories.",
+            "As a curious and extremely bored 8-year-old, I learned how to code HTML and CSS on my dad's desktop computer (which ran on Windows 98). I built a small site on Yahoo GeoCities offering pre-made web layouts and custom GIFs. After months of trying to find the site in the Internet Archive, I decided to make my portfolio site an homage to my earliest coding memories.",
           services: ['Front-End Web Development'],
           tools: ["React", "CSS", "Bootstrap"],
-          hovering: false
+          hovering: false,
+          visible: false
         },
         {
           id: 4,
@@ -87,13 +95,15 @@ class App extends Component {
             "Woke was inspired by the widespread misuse of the word. In a small attempt to make people truly 'woke', I conceptualized and designed a website that provides a simple data visualization of the editorial choices made by three major news networks. As this was one of my earlier projects, I worked alongside back-end engineers to build the UI and flow.",
           services: ['UX/UI design', 'Web Development'],
           tools: ["React", "Node", "CSS"],
-          hovering: false
+          hovering: false,
+          visible: false
         }
       ]
     };
     this.scrollToContent = this.scrollToContent.bind(this);
     this.handleMouseEnter = this.handleMouseEnter.bind(this);
     this.handleMouseLeave = this.handleMouseLeave.bind(this);
+    this.checkIfInView = this.checkIfInView.bind(this);
   }
   scrollToContent() {
     document.querySelector('.work-container').scrollIntoView({
@@ -105,14 +115,31 @@ class App extends Component {
     let w = this.state.work;
     w[i].hovering = true;
     this.setState({ w });
-    console.log(i, 'true');
   }
   handleMouseLeave(i) {
     let w = this.state.work;
     w[i].hovering = false;
     this.setState({ w });
-    console.log(i, 'false');
   }
+    checkIfInView() {
+    for(var i=0; i < this.state.work.length; i++) {
+    let el = document.querySelector(`#el-010${i}`);
+
+    var rect = el.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+
+    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    
+    let w = this.state.work;
+
+    if (isVisible === true) {
+      w[i].visible = true;
+      this.setState({ w });
+    }
+      }
+}
   render() {
     return (
       <div>
@@ -126,6 +153,7 @@ class App extends Component {
                 scrollToContent={this.scrollToContent}
                 handleMouseLeave={this.handleMouseLeave}
                 handleMouseEnter={this.handleMouseEnter}
+                checkIfInView={this.checkIfInView}
               />
             )}
           />

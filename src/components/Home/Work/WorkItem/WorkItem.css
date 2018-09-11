@@ -5,6 +5,19 @@
 	background-color: #1c45db;
 	position: relative;
 	text-align: center;
+	transition: all 0.5s ease-in-out 0s;
+}
+
+.in-vis {
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(-50px);
+}
+
+.vis {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
 }
 
 .tile-text {

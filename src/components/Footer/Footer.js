@@ -4,7 +4,15 @@ import "./Footer.css";
 class Footer extends Component {
 	render() {
 		const links = this.props.links.map((l, index) => {
-			return !l.href.includes('mailto') ? (<a href={l.href} target="_blank" rel="noopener noreferrer" key={index}>{l.title}</a>) : (<a href={l.href} key={index}>{l.title}</a>);
+			return !l.href.includes("mailto") ? (
+				<a href={l.href} target="_blank" rel="noopener noreferrer" key={index}>
+					<img src={`${l.icon}`} alt={l.title} />
+				</a>
+			) : (
+				<a href={l.href} key={index}>
+					<img src={`${l.icon}`} alt={l.title} />
+				</a>
+			);
 		});
 		return (
 			<footer>

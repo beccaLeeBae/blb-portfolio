@@ -5,15 +5,18 @@ footer {
 	align-items: center;
 	justify-content: center;
 	margin-top: 50px;
+	text-align: center;
 }
 
 footer a {
 	color: black;
-	margin: 0 30px;
-	padding: 2px;
-	border-bottom: 3px solid #1c45db;
+	margin: 0 20px;
 }
 
-footer a:hover {
-	background-color: #1c45db;
+footer p {
+	margin: 0;
+}
+
+footer img {
+	width: 35px;
 }
