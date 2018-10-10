@@ -18,7 +18,7 @@ class Footer extends Component {
 			<footer>
 				<div>{links}</div>
 				<br />
-				<p>&copy; Becca Lee Bae. All rights reserved.</p>
+				<p>Copyright &copy; 2018 Becca Lee Bae. All rights reserved.</p>
 			</footer>
 		);
 	}
