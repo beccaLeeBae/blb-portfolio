@@ -10,6 +10,10 @@
 	width: calc(100vw - 240px);
 }
 
+.img-lg-prev {
+	margin-bottom: 3rem;
+}
+
 #proj-title {
 	color: #1c45db;
 	text-transform: uppercase;
@@ -22,6 +26,7 @@
 #proj-desc {
 	font-size: 22px;
 	margin: 100px;
+	text-align: justify;
 }
 
 #services {

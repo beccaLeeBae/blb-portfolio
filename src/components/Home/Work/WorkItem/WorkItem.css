@@ -1,7 +1,7 @@
 .proj-tile {
-	max-width: 400px;
+	max-width: 350px;
 	width: 100%;
-	margin: 1rem;
+	margin: 0.3rem;
 	background-color: #1c45db;
 	position: relative;
 	text-align: center;
@@ -25,6 +25,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	font-family: "maple-web", sans-serif;
 }
 
 .proj-tile a {
@@ -44,4 +45,10 @@
 	opacity: 0.05;
 	filter: grayscale(70%);
 	transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width: 582px) {
+	.proj-tile a {
+		font-size: 25px;
+	}
 }

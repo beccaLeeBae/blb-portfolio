@@ -16,6 +16,7 @@ class SingleProj extends Component {
 				<p id="proj-title">{p.title}</p>
 				<small id="services">{p.services.join(", ")}</small>
 				<p id="proj-desc">{p.description}</p>
+				{p.imgLgPrev && <img className="img-lg-prev" src={p.imgLgPrev} alt={p.title}/>}
 				<img src={`${p.imgLg}`} alt={p.title}/>
 				<ProjTools p={p}/>
 				<br />
