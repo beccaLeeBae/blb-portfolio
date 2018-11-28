@@ -15,9 +15,8 @@
 }
 
 #proj-title {
-	color: #1c45db;
 	text-transform: uppercase;
-	font-family: "maple-web", sans-serif;
+	font-family: "eloquent-jf-pro", serif;
 	font-size: 35px;
 	margin: 0;
 	align-self: flex-start;
@@ -59,5 +58,8 @@
 	}
 	#proj-title {
 		font-size: 28px;
+	}
+	#proj-desc {
+		text-align: left;
 	}
 }

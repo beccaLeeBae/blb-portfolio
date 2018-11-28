@@ -4,11 +4,9 @@
 }
 
 .work-container #header {
-	color: #1c45db;
 	text-transform: uppercase;
-	font-family: "maple-web", sans-serif;
+	font-family: "eloquent-jf-pro", serif;
 	font-size: 25px;
-	font-weight: 700;
 }
 
 .work-content {

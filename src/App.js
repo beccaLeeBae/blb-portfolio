@@ -29,6 +29,7 @@ class App extends Component {
           imgSm: "https://i.imgur.com/YAHUCST.png",
           imgLgPrev: 'https://i.imgur.com/TlGsPlR.png',
           imgLg: "https://i.imgur.com/uHbik8X.png",
+          link: 'http://toreadorfilms.com',
           description:
             "Toreador Films is a film production company based in Brooklyn, NY. The founder, Alexandre Pulido, was looking to move the company’s website off of Squarespace in search of a customized digital experience for potential clients and general visitors. In order to give users a more fully-featured concept of Toreador Films, I opted for a minimalist UI/UX design with a focus on visual and text content. I began by reorganizing the information architecture of the existing site and built hi-fidelity wireframes to communicate the new user flow. Once the design decisions were finalized, I began the front-end development using React and built a custom CMS using Ruby on Rails and ActiveAdmin.",
           services: ["Full-Stack Development", "UI/UX Design", "Custom CMS"],
@@ -50,7 +51,7 @@ class App extends Component {
           imgLg: "https://i.imgur.com/3vq16Up.png",
           description:
             "As the sole front-end engineer of Hello Vera (a customer service AI startup), I was tasked with redesigning and developing the client-facing console. The previous console offered many useful AI management features for clients, but the UI and UX was not clear enough for them to take full advantage of these tools. Utilizing the feedback from meetings with clients, I redesigned the user flow for the entire console, making toggling between and managing different channels much easier. Throughout the redesign process, I designed and developed a new navigation, self-service on-boarding, a multi-channel dashboard, analytics pages, and knowledge base import tools.",
-          services: ["Front-End Development", "UX/UI Design"],
+          services: ["Front-End Development", "UI/UX Design"],
           tools: [
             "JavaScript/jQuery",
             "DataTables",
@@ -72,7 +73,7 @@ class App extends Component {
             "The Vintage Voyageur is a budding Amazon web series featuring unique and high-end vintage boutiques across the US. The creator and host, Allison Maldonado, wanted a website for the show that mirrored her fun and colorful personality. I built an interactive and content-rich experience to allow viewers to browse previous episodes and learn more about Allison.",
           services: [
             "Front-End Development",
-            "UX/UI Design",
+            "UI/UX Design",
             "Press Kit Design"
           ],
           tools: ["React", "CSS", "Bootstrap", "Sketch", "Photoshop"],
@@ -87,7 +88,7 @@ class App extends Component {
           link: "http://graceanddamon.com",
           description:
             "After finding out that my best friend was getting married, a website seemed like the perfect wedding gift. Grace and Damon's wedding website features a custom designed front-end with functionality such as browsing the wedding party, accessing the registry, and getting important information about the wedding day. Additonally, I built a guest RSVP API that integrates with the front-end to provide a seamless experience for attendees as well as an admin portal to manage RSVPs.",
-          services: ["Full-Stack Development", "UX/UI Design"],
+          services: ["Full-Stack Development", "UI/UX Design"],
           tools: ["React", "Ruby on Rails", "Heroku", "PostgreSQL", "CSS", "Bootstrap"],
           hovering: false,
           visible: false
@@ -114,7 +115,7 @@ class App extends Component {
           link: "http://woke.surge.sh",
           description:
             "Woke was inspired by the widespread misuse of the word. In a small attempt to make people truly 'woke', I conceptualized and designed a website that provides a simple data visualization of the editorial choices made by three major news networks. As this was one of my earlier projects, I worked alongside back-end engineers to build the UI and flow.",
-          services: ["Full-Stack Development", "UX/UI Design"],
+          services: ["Full-Stack Development", "UI/UX Design"],
           tools: ["React", "Node", "CSS"],
           hovering: false,
           visible: false

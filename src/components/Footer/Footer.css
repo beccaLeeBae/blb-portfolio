@@ -8,9 +8,10 @@ footer {
 	text-align: center;
 }
 
-footer a {
-	color: black;
-	margin: 0 10px;
+.link-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 footer p {
@@ -18,5 +19,22 @@ footer p {
 }
 
 footer img {
-	width: 35px;
+	width: 16px;
+}
+
+.link-cir {
+	width: 45px;
+	height: 45px;
+	background-color: black;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 15px;
+	transition: 0.2s ease all;
+}
+
+.link-cir:hover {
+	background-color: #F76859;
+	cursor: pointer;
 }

@@ -1,8 +1,8 @@
 .tool-btn {
-	border: 1px solid #1c45db;
-	color: #1c45db;
-	background-color: transparent;
-	font-family: 'freight-sans-pro', sans-serif;
+	border: none;
+	color: rgba(0,0,0,1);
+	background-color: rgba(250,250,250,0.85);
+	font-family: 'brandon-grotesque', sans-serif;
 	font-size: 14px;
 	padding: 3px 8px;
 	margin: 0 5px 10px 5px;
