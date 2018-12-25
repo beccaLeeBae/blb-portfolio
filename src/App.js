@@ -10,6 +10,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      copyrightYear: new Date().getFullYear(),
       links: [
         {
           href: "mailto:beccaleebae@gmail.com",
@@ -17,7 +18,7 @@ class App extends Component {
           title: "Email"
         },
         {
-          href: "https://www.linkedin.com/in/rebekahbae/",
+          href: "https://www.linkedin.com/in/beccaleebae/",
           icon: LinkedInIcon,
           title: "LinkedIn"
         }
@@ -186,7 +187,7 @@ class App extends Component {
             )}
           />
         </Switch>
-        <Footer links={this.state.links} />
+        <Footer links={this.state.links} copyrightYear={this.state.copyrightYear} />
       </div>
     );
   }

@@ -22,7 +22,7 @@ class Footer extends Component {
 			<footer>
 				<div className="link-row">{links}</div>
 				<br />
-				<p>Copyright &copy; 2018 Becca Lee Bae. All rights reserved.</p>
+				<p>Copyright &copy; {this.props.copyrightYear} Becca Lee Bae. All rights reserved.</p>
 			</footer>
 		);
 	}
