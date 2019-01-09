@@ -21,7 +21,7 @@ class WorkItem extends Component {
 					>
 						{this.props.item.title}
 					</div>
-					<img src={`${this.props.imgSm}`} alt={this.props.item.title}/>
+					<img src={`${this.props.tileIcon}`} alt={this.props.item.title}/>
 				</Link>
 			</div>
 		);

@@ -9,7 +9,7 @@ class Work extends Component {
 				<WorkItem
 					key={item.id}
 					item={item}
-					imgSm={item.imgSm}
+					tileIcon={item.tileIcon}
 					handleMouseEnter={this.props.handleMouseEnter}
 					handleMouseLeave={this.props.handleMouseLeave}
 				/>
