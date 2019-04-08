@@ -57,7 +57,6 @@
     "title": "The Vintage Voyageur",
     "tileIcon": "https://i.imgur.com/Aqiey8U.png",
     "mockup": "https://i.imgur.com/1BZhvRo.png",
-    "link": "http://thevintagevoyageur.com",
     "description":
       "The Vintage Voyageur is a budding Amazon web series featuring unique and high-end vintage boutiques across the US. The creator and host, Allison Maldonado, wanted a website for the show that mirrored her fun and colorful personality. I built an interactive and content-rich experience to allow viewers to browse previous episodes and learn more about Allison.",
     "services": ["Front-End Development", "UI/UX Design", "Press Kit Design"],
