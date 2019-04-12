@@ -1,17 +1,14 @@
 import React, { Component } from "react";
 import WorkItem from "./WorkItem";
-import "./Work.css";
+import "./ProjectGrid.css";
 
-class Work extends Component {
+export default class ProjectGrid extends Component {
 	render() {
-		const items = this.props.work.map(item => {
+		let items = this.props.projectsData.map(item => {
 			return (
 				<WorkItem
 					key={item.id}
 					item={item}
-					tileIcon={item.tileIcon}
-					handleMouseEnter={this.props.handleMouseEnter}
-					handleMouseLeave={this.props.handleMouseLeave}
 				/>
 			);
 		});
@@ -23,5 +20,3 @@ class Work extends Component {
 		);
 	}
 }
-
-export default Work;

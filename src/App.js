@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Home from "./components/Home/Home";
-import SingleProj from "./components/SingleProj/SingleProj";
-import Footer from "./components/Footer/Footer";
+import Home from "./components/Home";
+import SingleProj from "./components/SingleProj";
+import Footer from "./components/Footer";
 import EmailIcon from "./assets/email.png";
 import LinkedInIcon from "./assets/linkedin.png";
-import projectsList from './utilities/projects.json';
+import projectsData from "./utilities/projects.json";
 import { Switch, Route } from "react-router-dom";
 
 class App extends Component {
@@ -24,47 +24,15 @@ class App extends Component {
           title: "LinkedIn"
         }
       ],
-      work: projectsList
+      projectsData: projectsData
     };
     this.scrollToContent = this.scrollToContent.bind(this);
-    this.handleMouseEnter = this.handleMouseEnter.bind(this);
-    this.handleMouseLeave = this.handleMouseLeave.bind(this);
-    this.checkIfInView = this.checkIfInView.bind(this);
   }
   scrollToContent() {
     document.querySelector(".work-container").scrollIntoView({
       behavior: "smooth",
       block: "start"
     });
-  }
-  handleMouseEnter(i) {
-    let w = this.state.work;
-    w[i].hovering = true;
-    this.setState({ w });
-  }
-  handleMouseLeave(i) {
-    let w = this.state.work;
-    w[i].hovering = false;
-    this.setState({ w });
-  }
-  checkIfInView() {
-    for (var i = 0; i < this.state.work.length; i++) {
-      let el = document.querySelector(`#el-010${i}`);
-
-      var rect = el.getBoundingClientRect();
-      var elemTop = rect.top;
-      var elemBottom = rect.bottom;
-
-      var isVisible = elemTop >= 0 && elemBottom <= window.innerHeight;
-      isVisible = elemTop < window.innerHeight && elemBottom >= 0;
-
-      let w = this.state.work;
-
-      if (isVisible === true) {
-        w[i].visible = true;
-        this.setState({ w });
-      }
-    }
   }
   render() {
     return (
@@ -75,22 +43,25 @@ class App extends Component {
             path="/"
             render={() => (
               <Home
-                work={this.state.work}
+                projectsData={this.state.projectsData}
                 scrollToContent={this.scrollToContent}
-                handleMouseLeave={this.handleMouseLeave}
-                handleMouseEnter={this.handleMouseEnter}
-                checkIfInView={this.checkIfInView}
               />
             )}
           />
           <Route
-            path="/:id"
+            path="/:project"
             render={({ match }) => (
-              <SingleProj match={match} work={this.state.work} />
+              <SingleProj
+                match={match}
+                projectsData={this.state.projectsData}
+              />
             )}
           />
         </Switch>
-        <Footer links={this.state.links} copyrightYear={this.state.copyrightYear} />
+        <Footer
+          links={this.state.links}
+          copyrightYear={this.state.copyrightYear}
+        />
       </div>
     );
   }

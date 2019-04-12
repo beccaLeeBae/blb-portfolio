@@ -1,6 +1,7 @@
 [
   {
     "id": 0,
+    "pathname": "fmeasure",
     "title": "FMeasure",
     "tileIcon": "https://i.imgur.com/imPADw5.png",
     "wires": "https://i.imgur.com/dLDsRKf.png",
@@ -8,12 +9,11 @@
     "description":
       "FMeasure is a B2B web application offering detailed insights for both potential investors and startups searching for funding. For this project, I was the sole UX designer and front-end engineer. I began with a deep dive of the information architecture pertaining to the legacy application and eventually pared down the introductory number of products to three. I then shifted my focus to designing the on-boarding and search user flows which helped me decide which reusable components to develop in React by compiling a list of repeated elements within my wireframes. Over the course of 8 weeks, I developed the new web application with the help of React and the Ant Design library, the latter for data entry elements and a responsive table offering filtering, sorting, and pagination features.",
     "services": ["Front-End Development, UI/UX Design"],
-    "tools": ["React", "Ant Design", "CSS", "Sketch"],
-    "hovering": false,
-    "visible": false
+    "tools": ["React", "Ant Design", "CSS", "Sketch"]
   },
   {
     "id": 1,
+    "pathname": "toreador-films",
     "title": "Toreador Films",
     "tileIcon": "https://i.imgur.com/YAHUCST.png",
     "wires": "https://i.imgur.com/TlGsPlR.png",
@@ -29,12 +29,11 @@
       "PostgreSQL",
       "CSS",
       "Sketch"
-    ],
-    "hovering": false,
-    "visible": false
+    ]
   },
   {
     "id": 2,
+    "pathname": "hello-vera",
     "title": "Hello Vera",
     "tileIcon": "https://i.imgur.com/ezoHe3D.png",
     "mockup": "https://i.imgur.com/3vq16Up.png",
@@ -48,24 +47,22 @@
       "CSS",
       "Bootstrap",
       "Sketch"
-    ],
-    "hovering": false,
-    "visible": false
+    ]
   },
   {
     "id": 3,
+    "pathname": "the-vintage-voyageur",
     "title": "The Vintage Voyageur",
     "tileIcon": "https://i.imgur.com/Aqiey8U.png",
     "mockup": "https://i.imgur.com/1BZhvRo.png",
     "description":
       "The Vintage Voyageur is a budding Amazon web series featuring unique and high-end vintage boutiques across the US. The creator and host, Allison Maldonado, wanted a website for the show that mirrored her fun and colorful personality. I built an interactive and content-rich experience to allow viewers to browse previous episodes and learn more about Allison.",
     "services": ["Front-End Development", "UI/UX Design", "Press Kit Design"],
-    "tools": ["React", "CSS", "Bootstrap", "Sketch", "Photoshop"],
-    "hovering": false,
-    "visible": false
+    "tools": ["React", "CSS", "Bootstrap", "Sketch", "Photoshop"]
   },
   {
     "id": 4,
+    "pathname": "the-gillespies",
     "title": "Grace & Damon",
     "tileIcon": "https://i.imgur.com/TYrqkDG.png",
     "mockup": "https://i.imgur.com/v6yAJ1r.png",
@@ -80,12 +77,11 @@
       "PostgreSQL",
       "CSS",
       "Bootstrap"
-    ],
-    "hovering": false,
-    "visible": false
+    ]
   },
   {
     "id": 5,
+    "pathname": "windows-98-portfolio",
     "title": "Windows 98: Becca Lee Bae",
     "tileIcon": "https://i.imgur.com/mOupaND.png",
     "mockup": "https://i.imgur.com/brxaLnf.png",
@@ -93,8 +89,6 @@
     "description":
       "As a curious and extremely bored 8-year-old, I taught myself HTML and CSS on my dad's desktop computer (which ran on Windows 98). I built a small site on Yahoo GeoCities offering pre-made web layouts and custom GIFs. After months of searching for the site in the Internet Archive to no avail, I gave up and decided to make my portfolio site an homage to my earliest coding memories.",
     "services": ["Front-End Development"],
-    "tools": ["React", "CSS", "Bootstrap"],
-    "hovering": false,
-    "visible": false
+    "tools": ["React", "CSS", "Bootstrap"]
   }
 ]
