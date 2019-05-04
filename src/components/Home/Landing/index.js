@@ -1,14 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import './Landing.css';
 
-class Landing extends Component {
-	scrollToContent() {
+const Landing = () => {
+	const scrollToContent = () => {
     document.querySelector(".work-container").scrollIntoView({
       behavior: "smooth",
       block: "start"
     });
   }
-	render() {
 		return (
 			<div className="landing-container">
 				<p>
@@ -20,9 +19,8 @@ class Landing extends Component {
 					passionate about designing and developing beautiful, intuitive
 					experiences.
 				</p>
-				<p id="scroll-down" onClick={() => this.scrollToContent()}>&#42780;</p>
+				<p id="scroll-down" onClick={() => scrollToContent()}>&#42780;</p>
 			</div>
 		);
-	}
 }
 export default Landing;

@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import ProjTools from "./ProjTools";
 import SiteButton from "./SiteButton";
+import projectsData from "../../utilities/projects.json";
+import { Link } from "react-router-dom";
 import "./SingleProj.css";
 
-class SingleProj extends Component {
+export default class SingleProj extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,14 +16,13 @@ class SingleProj extends Component {
     };
   }
   componentDidMount() {
-    const p = this.props.projectsData.find(
+    const p = projectsData.find(
       proj => proj.pathname === this.props.match.params.project
     );
 
     if (p === undefined) {
       window.location = "/";
     } else {
-    	window.scrollTo(0, 0);
       document.title = `Becca Lee Bae | ${p.title}`;
       this.setState({ projData: p });
     }
@@ -52,12 +53,10 @@ class SingleProj extends Component {
           <SiteButton link={projData.link} />
         )}
         <br />
-        <a id="back-btn" href="/">
+        <Link to="/" id="back-btn">
           ← BACK
-        </a>
+        </Link>
       </div>
     );
   }
 }
-
-export default SingleProj;

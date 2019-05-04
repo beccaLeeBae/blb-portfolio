@@ -1,14 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import Landing from "./Landing";
 import ProjectGrid from "./ProjectGrid";
 
-export default class Home extends Component {
-  render() {
+const Home = () => {
     return (
-      <div>
+      <React.Fragment>
         <Landing />
-        <ProjectGrid projectsData={this.props.projectsData} />
-      </div>
+        <ProjectGrid />
+      </React.Fragment>
     );
-  }
 }
+
+export default Home;
