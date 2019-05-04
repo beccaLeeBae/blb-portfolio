@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ToolButton from '../ToolButton';
+import './ProjTools.css';
 
 class ProjTools extends Component {
 	render() {

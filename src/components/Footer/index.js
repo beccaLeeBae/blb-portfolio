@@ -1,9 +1,24 @@
 import React, { Component } from "react";
+import emailIcon from "../../assets/email.png";
+import linkedInIcon from "../../assets/linkedin.png";
 import "./Footer.css";
 
 class Footer extends Component {
 	render() {
-		const links = this.props.links.map((l, index) => {
+		const links = [
+        {
+          href: "mailto:beccaleebae@gmail.com",
+          icon: emailIcon,
+          title: "Email"
+        },
+        {
+          href: "https://www.linkedin.com/in/beccaleebae/",
+          icon: linkedInIcon,
+          title: "LinkedIn"
+        }
+    ];
+
+		const renderLinks = links.map((l, index) => {
 			return !l.href.includes("mailto") ? (
 				<a href={l.href} target="_blank" rel="noopener noreferrer" key={index}>
 					<div className="link-cir">
@@ -18,11 +33,12 @@ class Footer extends Component {
 				</a>
 			);
 		});
+
 		return (
 			<footer>
-				<div className="link-row">{links}</div>
+				<div className="link-row">{renderLinks}</div>
 				<br />
-				<p>Copyright &copy; {this.props.copyrightYear} Becca Lee Bae. All rights reserved.</p>
+				<p>Copyright &copy; {new Date().getFullYear()} Becca Lee Bae. All rights reserved.</p>
 			</footer>
 		);
 	}

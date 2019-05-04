@@ -32,7 +32,7 @@ class SingleProj extends Component {
       <div className="single-proj-container">
         <p id="proj-title">{projData.title}</p>
         <small id="services">{projData.services.join(", ")}</small>
-        <p id="proj-desc">{projData.description}</p>
+        <p id="proj-desc" dangerouslySetInnerHTML={{__html: projData.description}}></p>
         {projData.wires && (
           <img
             className="img-lg-prev"

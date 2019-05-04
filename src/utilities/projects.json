@@ -7,7 +7,7 @@
     "wires": "https://i.imgur.com/dLDsRKf.png",
     "mockup": "https://i.imgur.com/VyvvY4m.png",
     "description":
-      "FMeasure is a B2B web application offering detailed insights for both potential investors and startups searching for funding. For this project, I was the sole UX designer and front-end engineer. I began with a deep dive of the information architecture pertaining to the legacy application and eventually pared down the introductory number of products to three. I then shifted my focus to designing the on-boarding and search user flows which helped me decide which reusable components to develop in React by compiling a list of repeated elements within my wireframes. Over the course of 8 weeks, I developed the new web application with the help of React and the Ant Design library, the latter for data entry elements and a responsive table offering filtering, sorting, and pagination features.",
+      "FMeasure is a B2B web application offering detailed insights for both potential investors and startups searching for funding. For this project, I was the sole UX designer and front-end engineer. I began with a deep dive of the information architecture pertaining to the legacy application and eventually pared down the introductory number of products to three. I then shifted my focus to designing the onboarding and main user flows, which helped me decide which reusable components to create. Over the course of 8 weeks, I developed the new web application with the help of React and the Ant Design library, the latter for data entry elements and a responsive table offering filtering, sorting, and pagination features.",
     "services": ["Front-End Development, UI/UX Design"],
     "tools": ["React", "Ant Design", "CSS", "Sketch"]
   },
@@ -20,7 +20,7 @@
     "mockup": "https://i.imgur.com/uHbik8X.png",
     "link": "http://toreadorfilms.com",
     "description":
-      "Toreador Films is a film production company based in Brooklyn, NY. The founder, Alexandre Pulido, was looking to move the company’s website off of Squarespace in search of a customized digital experience for potential clients and general visitors. In order to give users a more fully-featured concept of Toreador Films, I opted for a minimalist UI/UX design with a focus on visual and text content. I began by reorganizing the information architecture of the existing site and built hi-fidelity wireframes to communicate the new user flow. Once the design decisions were finalized, I began the front-end development using React and built a custom CMS using Ruby on Rails and ActiveAdmin.",
+      "Toreador Films is a film production company based in Brooklyn, NY. The founder, Alexandre Pulido, was looking to move the company’s website off of Squarespace in search of a customized digital experience for potential clients and general visitors. In order to give users a more fully-featured concept of Toreador Films, I opted for a minimalist UI/UX design with a focus on the visual content. I began by reorganizing the information architecture of the existing site and built hi-fidelity wireframes to communicate the new user flow. Once the design decisions were finalized, I began the front-end development using React and built a custom CMS using Ruby on Rails and ActiveAdmin.",
     "services": ["Full-Stack Development", "UI/UX Design", "Custom CMS"],
     "tools": [
       "React",
@@ -38,7 +38,7 @@
     "tileIcon": "https://i.imgur.com/ezoHe3D.png",
     "mockup": "https://i.imgur.com/3vq16Up.png",
     "description":
-      "As the sole front-end engineer of Hello Vera (a customer service AI startup), I was tasked with redesigning and developing the client-facing console. The previous console offered many useful AI management features for clients, but the UI and UX was not clear enough for them to take full advantage of these tools. Utilizing the feedback from meetings with clients, I redesigned the user flow for the entire console, making toggling between and managing different channels much easier. Throughout the redesign process, I designed and developed a new navigation, self-service on-boarding, a multi-channel dashboard, analytics pages, and knowledge base import tools.",
+      "As the sole front-end engineer of Hello Vera (a customer service AI startup), I took ownership of redesigning and developing the client-facing console. The previous console offered many useful AI management features for clients, but the UI and UX was not clear enough for them to take full advantage of these tools. Utilizing the feedback from meetings with clients, I redesigned the user flow for the entire console, making toggling between and managing different channels much easier. Throughout the redesign process, I designed and developed a new navigation, self-service onboarding, a multi-channel dashboard, several analytics pages, and knowledgebase import tools.",
     "services": ["Front-End Development", "UI/UX Design"],
     "tools": [
       "JavaScript/jQuery",
@@ -68,7 +68,7 @@
     "mockup": "https://i.imgur.com/v6yAJ1r.png",
     "link": "http://thegillespies.beccaleebae.com",
     "description":
-      "After finding out that my best friend was getting married, a website seemed like the perfect wedding gift. Grace and Damon's wedding website features a custom designed front-end with functionality such as browsing the wedding party, accessing the registry, and getting important information about the wedding day. Additonally, I built a guest RSVP API that integrates with the front-end to provide a seamless experience for attendees as well as an admin portal to manage RSVPs.",
+      "When my best friend asked me to be the maid of honor at her wedding, I thought a website would be a great way to kick things off. On Grace and Damon's wedding website, guests were able to find general information about the wedding day, access their registry, and RSVP. I also built an admin portal with Ruby on Rails as well as a program designed to look like a Playbill (PDF version can be found <a href='https://www.dropbox.com/s/pexshi127m7h79o/Wedding%20Program.pdf?dl=0' target='_blank' rel='noopener noreferrer'>here</a>).",
     "services": ["Full-Stack Development", "UI/UX Design"],
     "tools": [
       "React",
@@ -87,7 +87,7 @@
     "mockup": "https://i.imgur.com/brxaLnf.png",
     "link": "http://windows.beccaleebae.com",
     "description":
-      "As a curious and extremely bored 8-year-old, I taught myself HTML and CSS on my dad's desktop computer (which ran on Windows 98). I built a small site on Yahoo GeoCities offering pre-made web layouts and custom GIFs. After months of searching for the site in the Internet Archive to no avail, I gave up and decided to make my portfolio site an homage to my earliest coding memories.",
+      "As a curious and extremely bored 8-year-old, I taught myself HTML and CSS on my dad's desktop computer (which ran on Windows 98). I spent my time building a GeoCities site offering pre-made web layouts and custom GIFs. After months of searching for the site in the Internet Archive to no avail, I gave up and decided to make my portfolio site an homage to my earliest coding memories.",
     "services": ["Front-End Development"],
     "tools": ["React", "CSS", "Bootstrap"]
   }
