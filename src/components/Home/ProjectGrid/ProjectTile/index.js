@@ -27,12 +27,7 @@ export default class WorkItem extends Component {
         onMouseLeave={() => this.handleMouseLeave()}
       >
         <Link to={{ pathname: `/${item.pathname}` }}>
-          <p
-            className="tile-text"
-            style={{ display: this.state.hovering === true ? "block" : "none" }}
-          >
-            {item.title}
-          </p>
+          {this.state.hovering && <p className="tile-text">{item.title}</p>}
           <img src={`${item.tileIcon}`} alt={item.title} />
         </Link>
       </div>

@@ -54,7 +54,7 @@ export default class SingleProj extends Component {
         )}
         <br />
         <Link to="/" id="back-btn">
-          ← BACK
+          Back
         </Link>
       </div>
     );
